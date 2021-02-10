@@ -1,0 +1,17 @@
+{
+  "name": "electron-tiny",
+  "version": "1.0.0",
+  "author": "Mateus Deitos",
+  "description": "Aplicação de testes com o electron",
+  "main": "main.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron ."
+  },
+  "devDependencies": {
+    "electron": "^11.2.3"
+  },
+  "dependencies": {
+    "edge": "^7.10.1"
+  }
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Electron Tiny!</title>
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+    <link rel="stylesheet" href="./styles/index.css">
+</head>
+<body>
+    <main class="main-container">
+        <div class="header">
+            <h1>Busque um arquivo:</h1>
+        </div>
+        <div class="body">
+            <div class="actions">
+
+            <button type="button" id='open-dialog-file'>Escolha um arquivo</button>
+            </div>
+            <div class="results">
+                <table class="table-results">
+                    <thead>
+                        <th>Path</th>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+        <div class="footer">
+            <small>
+                Node version: <script>document.write(process.versions.node)</script> |
+                Chrome version: <script>document.write(process.versions.chrome)</script> |
+                Electron version: <script>document.write(process.versions.electron)</script> |
+            </small>
+        </div>
+    </main>
+    <script type="text/javascript">
+        require('./renderer.js')
+    </script>
+</body>
+</html>
